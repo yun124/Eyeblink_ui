@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        // Assign the click listener to each button
 
-        // set the bottom navigation view listener
+
+
+        // Set the bottom navigation view listener
         binding.bottomNavbar.setOnItemSelectedListener(item -> {
-
             if (item.getItemId() == R.id.home_button) {
                 replaceFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.emergency_button) {
@@ -48,27 +49,32 @@ public class MainActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.keyboard_button) {
                 replaceFragment(new KeyboardFragment());
             }
-
             return true;
         });
     }
 
-    private void replaceFragment(Fragment fragment) {
+
+
+    public void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
+
         fragmentTransaction.commit();
     }
 
-    public void openSettings(View view) {
-        replaceFragment(new SettingsFragment());
-        //view.setBackgroundResource(R.drawable.selected_button_background);
-    }
 
 
 
 
 }
+
+
+
+
+
+
+
 
 
 

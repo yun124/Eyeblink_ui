@@ -6,20 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    >
 
     <!-- Yes/No Button -->
 
     <!-- Dots under Yes/No Button -->
 
     <Button
-        android:id="@+id/button_yes_no"
+        android:id="@+id/yes_no_button"
         android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Yes/No"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +35,9 @@
         android:text="●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_yes_no"
-        app:layout_constraintStart_toStartOf="@id/button_yes_no"
-        app:layout_constraintEnd_toEndOf="@id/button_yes_no"
+        app:layout_constraintTop_toBottomOf="@id/yes_no_button"
+        app:layout_constraintStart_toStartOf="@id/yes_no_button"
+        app:layout_constraintEnd_toEndOf="@id/yes_no_button"
         android:layout_marginTop="8dp" />
 
     <!-- Needs Button -->
@@ -43,7 +45,7 @@
     <!-- Dots under Needs Button -->
 
     <Button
-        android:id="@+id/button_needs"
+        android:id="@+id/needs_button"
         android:layout_width="182dp"
         android:layout_height="130dp"
         android:layout_marginStart="20dp"
@@ -51,10 +53,12 @@
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Needs"
+        android:textSize="20dp"
         android:textColor="@color/black"
+        android:onClick="openNeeds"
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_yes_no" />
+        app:layout_constraintTop_toBottomOf="@id/yes_no_button" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,9 +66,9 @@
         android:text="● ●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_needs"
-        app:layout_constraintStart_toStartOf="@id/button_needs"
-        app:layout_constraintEnd_toEndOf="@id/button_needs"
+        app:layout_constraintTop_toBottomOf="@id/needs_button"
+        app:layout_constraintStart_toStartOf="@id/needs_button"
+        app:layout_constraintEnd_toEndOf="@id/needs_button"
         android:layout_marginTop="8dp" />
 
     <!-- Greetings Button -->
@@ -72,7 +76,7 @@
     <!-- Dots under Greetings Button -->
 
     <Button
-        android:id="@+id/button_greetings"
+        android:id="@+id/greetings_button"
         android:layout_width="182dp"
         android:layout_height="130dp"
         android:layout_marginTop="50dp"
@@ -80,10 +84,11 @@
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Greetings"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_yes_no" />
+        app:layout_constraintTop_toBottomOf="@id/yes_no_button" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -91,9 +96,9 @@
         android:text="● ● ●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_greetings"
-        app:layout_constraintStart_toStartOf="@id/button_greetings"
-        app:layout_constraintEnd_toEndOf="@id/button_greetings"
+        app:layout_constraintTop_toBottomOf="@id/greetings_button"
+        app:layout_constraintStart_toStartOf="@id/greetings_button"
+        app:layout_constraintEnd_toEndOf="@id/greetings_button"
         android:layout_marginTop="8dp" />
 
     <!-- Emotions Button -->
@@ -101,7 +106,7 @@
     <!-- Dots under Emotions Button -->
 
     <Button
-        android:id="@+id/button_emotions"
+        android:id="@+id/emotions_button"
         android:layout_width="182dp"
         android:layout_height="130dp"
         android:layout_marginStart="20dp"
@@ -109,10 +114,11 @@
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Emotions"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_needs" />
+        app:layout_constraintTop_toBottomOf="@id/needs_button" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -120,9 +126,9 @@
         android:text="● ● ● ●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_emotions"
-        app:layout_constraintStart_toStartOf="@id/button_emotions"
-        app:layout_constraintEnd_toEndOf="@id/button_emotions"
+        app:layout_constraintTop_toBottomOf="@id/emotions_button"
+        app:layout_constraintStart_toStartOf="@id/emotions_button"
+        app:layout_constraintEnd_toEndOf="@id/emotions_button"
         android:layout_marginTop="8dp" />
 
     <!-- Health Button -->
@@ -130,7 +136,7 @@
     <!-- Dots under Health Button -->
 
     <Button
-        android:id="@+id/button_health"
+        android:id="@+id/health_button"
         android:layout_width="182dp"
         android:layout_height="130dp"
         android:layout_marginTop="44dp"
@@ -138,10 +144,11 @@
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Health"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_greetings" />
+        app:layout_constraintTop_toBottomOf="@id/greetings_button" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -149,9 +156,9 @@
         android:text="● ● ● ● ●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_health"
-        app:layout_constraintStart_toStartOf="@id/button_health"
-        app:layout_constraintEnd_toEndOf="@id/button_health"
+        app:layout_constraintTop_toBottomOf="@id/health_button"
+        app:layout_constraintStart_toStartOf="@id/health_button"
+        app:layout_constraintEnd_toEndOf="@id/health_button"
         android:layout_marginTop="8dp" />
 
     <!-- Commands Button -->
@@ -159,19 +166,20 @@
     <!-- Dots under Commands Button -->
 
     <Button
-        android:id="@+id/button_commands"
+        android:id="@+id/commands_button"
         android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Commands"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_emotions" />
+        app:layout_constraintTop_toBottomOf="@id/emotions_button" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -179,9 +187,9 @@
         android:text="● ● ● ● ● ●"
         android:textColor="@color/purple"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/button_commands"
-        app:layout_constraintStart_toStartOf="@id/button_commands"
-        app:layout_constraintEnd_toEndOf="@id/button_commands"
+        app:layout_constraintTop_toBottomOf="@id/commands_button"
+        app:layout_constraintStart_toStartOf="@id/commands_button"
+        app:layout_constraintEnd_toEndOf="@id/commands_button"
         android:layout_marginTop="8dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

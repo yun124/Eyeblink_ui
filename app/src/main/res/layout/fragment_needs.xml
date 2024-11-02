@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context=".EmergencyFragment"
+    tools:context=".NeedsFragment"
     >
 
-    <!-- TODO: change the text values -->
+    <!-- TODO: back button -->
 
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_marginTop="80dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Needs"
+        android:text="I am thirsty"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
@@ -65,7 +65,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Greetings"
+        android:text="I am hungry"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
@@ -93,7 +93,7 @@
         android:layout_marginTop="44dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Emotions"
+        android:text="I need the bathroom"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
@@ -120,7 +120,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Health"
+        android:text="I'm cold"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
@@ -148,7 +148,7 @@
         android:layout_marginTop="44dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Emotions"
+        android:text="I'm hot"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
@@ -175,7 +175,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
-        android:text="Health"
+        android:text="I am tired"
         android:textSize="20dp"
         android:textColor="@color/black"
         app:backgroundTint="@null"
