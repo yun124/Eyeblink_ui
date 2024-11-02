@@ -1,107 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
     tools:context=".HomeFragment">
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
+    <!-- Yes/No Button -->
 
-        android:layout_marginBottom="244dp"
-        android:background="@drawable/box"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Commands"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Dots under Yes/No Button -->
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="5dp"
-
-        android:layout_marginTop="228dp"
-
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="32dp"
+        android:id="@+id/button_yes_no"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="196dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Yes/No"
         android:textColor="@color/black"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="155dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="274dp"
-        android:background="@drawable/box"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Health"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.02" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_yes_no"
+        app:layout_constraintStart_toStartOf="@id/button_yes_no"
+        app:layout_constraintEnd_toEndOf="@id/button_yes_no"
+        android:layout_marginTop="8dp" />
+
+    <!-- Needs Button -->
+
+    <!-- Dots under Needs Button -->
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="155dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/button_needs"
+        android:layout_width="182dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Needs"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@id/button_yes_no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_needs"
+        app:layout_constraintStart_toStartOf="@id/button_needs"
+        app:layout_constraintEnd_toEndOf="@id/button_needs"
+        android:layout_marginTop="8dp" />
+
+    <!-- Greetings Button -->
+
+    <!-- Dots under Greetings Button -->
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="155dp"
-        android:layout_height="115dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/box"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Emotions"
-        android:textColor="@color/black"
-        app:backgroundTint="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="155dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
+        android:id="@+id/button_greetings"
+        android:layout_width="182dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/box"
         android:fontFamily="@font/roboto_bold"
         android:text="Greetings"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@id/button_yes_no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ● ●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_greetings"
+        app:layout_constraintStart_toStartOf="@id/button_greetings"
+        app:layout_constraintEnd_toEndOf="@id/button_greetings"
+        android:layout_marginTop="8dp" />
+
+    <!-- Emotions Button -->
+
+    <!-- Dots under Emotions Button -->
+
+    <Button
+        android:id="@+id/button_emotions"
+        android:layout_width="182dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Emotions"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_needs" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ● ● ●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_emotions"
+        app:layout_constraintStart_toStartOf="@id/button_emotions"
+        app:layout_constraintEnd_toEndOf="@id/button_emotions"
+        android:layout_marginTop="8dp" />
+
+    <!-- Health Button -->
+
+    <!-- Dots under Health Button -->
+
+    <Button
+        android:id="@+id/button_health"
+        android:layout_width="182dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Health"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_greetings" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ● ● ● ●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_health"
+        app:layout_constraintStart_toStartOf="@id/button_health"
+        app:layout_constraintEnd_toEndOf="@id/button_health"
+        android:layout_marginTop="8dp" />
+
+    <!-- Commands Button -->
+
+    <!-- Dots under Commands Button -->
+
+    <Button
+        android:id="@+id/button_commands"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Commands"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_emotions" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="● ● ● ● ● ●"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_commands"
+        app:layout_constraintStart_toStartOf="@id/button_commands"
+        app:layout_constraintEnd_toEndOf="@id/button_commands"
+        android:layout_marginTop="8dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
