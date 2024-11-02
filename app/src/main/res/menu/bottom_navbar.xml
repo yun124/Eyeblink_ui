@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/emergency_button"
-        android:title="Emergency"
+        android:title="● — ●"
         android:icon="@drawable/emergency_icon" />
     <item android:id="@+id/home_button"
-        android:title="Home"
+        android:title="● —"
         android:icon="@drawable/home_icon" />
     <item android:id="@+id/keyboard_button"
-        android:title="Keyboard"
+        android:title="● ● —"
         android:icon="@drawable/keyboard_icon" />
 </menu>
