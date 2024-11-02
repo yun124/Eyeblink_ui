@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state with purple outline and transparent background -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <solid android:color="@color/white" />
             <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="#4B2B85" /> <!-- Outline color on press -->
         </shape>
     </item>
+
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/white" />
+            <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="@color/purple" /> <!-- Outline color on press -->
+        </shape>
+    </item>
+
+    <!-- Default state with white background and no outline -->
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/white" /> <!-- Default background color -->
+            <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="@android:color/transparent" /> <!-- Transparent outline -->
+        </shape>
+    </item>
+
 </selector>
