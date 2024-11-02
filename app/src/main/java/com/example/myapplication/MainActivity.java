@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         // open home fragment when the app starts and set the home icon as selected
         replaceFragment(new HomeFragment());
-        binding.bottomNavigationView.setSelectedItemId(R.id.home);
+        binding.bottomNavigationView.setSelectedItemId(R.id.home_button);
 
 
         EdgeToEdge.enable(this);
@@ -41,11 +41,11 @@ public class MainActivity extends AppCompatActivity {
         // set the bottom navigation view listener
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
 
-            if (item.getItemId() == R.id.home) {
+            if (item.getItemId() == R.id.home_button) {
                 replaceFragment(new HomeFragment());
-            } else if (item.getItemId() == R.id.emergency) {
+            } else if (item.getItemId() == R.id.emergency_button) {
                 replaceFragment(new EmergencyFragment());
-            } else if (item.getItemId() == R.id.keyboard) {
+            } else if (item.getItemId() == R.id.keyboard_button) {
                 replaceFragment(new KeyboardFragment());
             }
 

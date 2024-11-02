@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/emergency"
+    <item android:id="@+id/emergency_button"
         android:title="Emergency"
-        android:icon="@drawable/emergency" />
-    <item android:id="@+id/home"
+        android:icon="@drawable/emergency_icon" />
+    <item android:id="@+id/home_button"
         android:title="Home"
-        android:icon="@drawable/home" />
-    <item android:id="@+id/keyboard"
+        android:icon="@drawable/home_icon" />
+    <item android:id="@+id/keyboard_button"
         android:title="Keyboard"
-        android:icon="@drawable/keyboard" />
+        android:icon="@drawable/keyboard_icon" />
 </menu>
