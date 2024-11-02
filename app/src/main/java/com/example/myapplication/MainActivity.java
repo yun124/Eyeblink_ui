@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -58,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
+    }
+
+    private void openSettings(View view) {
+        replaceFragment(new SettingsFragment());
     }
 
 
